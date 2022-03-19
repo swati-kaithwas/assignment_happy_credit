@@ -1,0 +1,136 @@
+.nav_bar {
+  display: grid;
+  grid-template-columns: 8% 40% 45%;
+  height: 70px;
+  width: 100%;
+  border-bottom: 0.5px solid rgb(228, 223, 223);
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+.nav_logo {
+  margin-left: 20px;
+}
+.nav_menu ul {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.nav_menu li {
+  list-style: none;
+  color: black;
+  font-weight: 500;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  align-items: left;
+}
+/* .login > nav_btn1 > nav_btn2 {
+  height: 30px;
+  width: 100px;
+  border-radius: 20px;
+} */
+.nav_btn1 {
+  height: 30px;
+  width: 100px;
+  border-radius: 20px;
+}
+.nav_btn2 {
+  height: 30px;
+  width: 150px;
+  border-radius: 20px;
+}
+.nav_btn1:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.nav_btn2 {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.nav_btn2:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 898px) {
+  .nav_bar {
+    height: 70px;
+    grid-template-columns: 20% 30% 40%;
+    align-items: center;
+  }
+  .nav_menu {
+    display: none;
+  }
+  .nav_logo {
+    width: 80px;
+    height: 18px;
+    position: fixed;
+    left: "20px";
+  }
+  .mobile_nav_menu {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    margin-top: 70px;
+    display: grid;
+    grid-column: 1/5;
+    grid-template-columns: 100%;
+    align-items: center;
+    padding-left: 2rem;
+    transition: all 2s linear;
+    transform-origin: top;
+    border-bottom: 0.5px solid;
+  }
+  .mobile_nav_menu ul {
+    height: 20rem;
+    display: flex;
+    justify-content: auto;
+    flex-direction: column;
+    align-items: start;
+  }
+  .mobile_nav_menu ul li:first-child {
+    transition-delay: 0.2s;
+  }
+  .nav_button {
+    grid-row: 1/2;
+    grid-column: 3/5;
+    justify-items: end;
+    align-items: center;
+    transition: all 2s linear;
+    transition: 0.5s;
+  }
+  .login {
+    height: 0;
+    display: none;
+  }
+  .login {
+    position: fixed;
+    right: 25px;
+    height: 70px;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+  .hamburger {
+    display: block;
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  .nav_btn1 {
+    display: block;
+  }
+}

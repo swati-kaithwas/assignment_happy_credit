@@ -1,0 +1,88 @@
+.heading_body {
+  margin-top: 60px;
+  /* margin-left: 50px; */
+  font-size: 45px;
+  font-weight: 700;
+}
+.body_pargraph {
+  /* margin-left: 50px; */
+  margin-top: -30px;
+}
+.body_half {
+  display: grid;
+  grid-template-columns: 20% 70%;
+}
+.body_half li {
+  list-style: none;
+  color: rgb(49, 54, 54);
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.body_half li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.body_half h3 {
+  margin-left: 40px;
+}
+
+hr {
+  margin-top: 15px;
+  margin-left: 40px;
+  width: 180px;
+}
+.filter {
+  margin-left: 40px;
+}
+#discount2 {
+  margin-left: 40px;
+}
+#discount1 {
+  margin-left: 40px;
+}
+/* .typ {
+  margin-left: 40px;
+  margin-top: 15px;
+} */
+/* .dis {
+  margin-left: 40px;
+  margin-top: 10px;
+} */
+#onlycoupons {
+  margin-left: 40px;
+  margin-top: 15px;
+}
+#exclusives {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+#bogo {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+/* .body_half2 {
+  /* display: flex; */
+
+.searchbar {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.searchdiv {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+.typ_b {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+/* .dis_ty {
+  display: flex;
+} */
+.heading_paragraph {
+  padding: 40px 0px 0px 50px;
+}
