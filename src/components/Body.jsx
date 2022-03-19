@@ -43,10 +43,10 @@ export const Body = () => {
 
               <div
                 onClick={() => {
-                  setS1(s1 == "none" ? "block" : "none");
+                  setS1(s1 === "none" ? "block" : "none");
                 }}
               >
-                {s1 == "none" ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                {s1 === "none" ? <IoIosArrowDown /> : <IoIosArrowUp />}
               </div>
             </div>
 
@@ -68,10 +68,10 @@ export const Body = () => {
 
               <div
                 onClick={() => {
-                  setS(s == "none" ? "block" : "none");
+                  setS(s === "none" ? "block" : "none");
                 }}
               >
-                {s == "none" ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                {s === "none" ? <IoIosArrowDown /> : <IoIosArrowUp />}
               </div>
             </div>
 
